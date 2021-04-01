@@ -65,7 +65,7 @@
                         </li>
                     <li class="ml-12">
                       <a
-                        class="font-bold bg-primored hover:bg-red-600 text-white px-8 py-3 rounded border-b-2 border-transparent transition-colors duration-200"
+                        class="font-bold bg-primored text-white px-8 py-3 rounded border-b-2 border-transparent transition-colors duration-200"
                         href="https://app.primo.af"
                       >
                         <i class="fab fa-github mr-1"></i>
@@ -159,9 +159,11 @@
   <div
     class="container text-gray-700 flex flex-col lg:flex-row items-start lg:items-end justify-between"
   >
-    <div class="mb-4 lg:mb-0" xyz="fade right duration-10">
+    <div class="mb-4 lg:mb-0">
       <h1
-        class="xyz-in pb-4 text-3xl md:text-6xl font-bold leading-none max-w-3xl"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        class="pb-4 text-3xl md:text-6xl font-bold leading-none max-w-3xl"
       >
         a modern, dev-friendly alternative to WordPress
       </h1>
@@ -187,14 +189,13 @@
     </div>
   </div>
 </header>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
   integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
   crossorigin="anonymous"
 />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@animxyz/core@0.4.0/dist/animxyz.min.css">
-
 </div>
           <script type="module">
         const primo = {
@@ -223,6 +224,12 @@ AOS.init()</script>
         </div>
         
       </div>
+      
+        <div class="block" id="block-0c1s8">
+          <div class="primo-copy" id="copy-0c1s8">
+            <p>The open web wouldn’t be what it is today without WordPress, but as freelancer it’s just <em>too much</em>. So I built primo - an alternative built on the best of the modern web that makes it radically simpler (fun even) to build fast, editable, scalable websites. I hope you enjoy it as much as I have.</p><p><strong>Mateo, creator</strong></p>
+          </div>
+        </div>
       
       <div class="block" id="block-yqwsi">
         <div class="primo-component" id="component-yqwsi">
@@ -321,7 +328,7 @@ AOS.init()</script>
                     </template>
                </button>
                <div class="relative overflow-hidden transition-all h-0 duration-200" x-ref="container1" x-bind:style="selected == 1 ? 'height: ' + $refs.container1.scrollHeight + 'px' : ''">
-                    <div class="p-6"><p>At the moment, primo works best with websites containing fewer than thirty pages. There are much better options out there meant for creating larger sites with more complex needs (NextJS, ElderJS, Hugo) and managing them (Strapi, Sanity). </p>
+                    <div class="p-6"><p>At the moment, primo works best with websites with fewer than thirty pages. There are much better options out there meant for creating larger sites (NextJS, ElderJS, Hugo) and managing them (Strapi, Sanity).</p>
 <p>Since primo's an entirely new platform, you'll also have to be okay with leaving behind any functionality that comes with other solutions (e.g. WordPress plugins) unless find a way to use them alongside primo.</p></div>
                </div>
             </li>
@@ -335,7 +342,7 @@ AOS.init()</script>
                     </template>
                </button>
                <div class="relative overflow-hidden transition-all h-0 duration-200" x-ref="container2" x-bind:style="selected == 2 ? 'height: ' + $refs.container2.scrollHeight + 'px' : ''">
-                    <div class="p-6"><p>Not yet, but soon you'll be able to use data from external sources  - whether that's another CMS, a spreadsheet, or a coffee pot.</p></div>
+                    <div class="p-6"><p>It's possible but not recommended at this point since primo can't consume data from an external source (yet), so you'll have to integrate your content after it's built by using something like Github Actions. For example, to use a site built in primo with WordPress you could theoretically build the site with shortcodes embedded, then deploy those files to a separate WP repo.</p></div>
                </div>
             </li>
             <li class="relative bg-gray-900 rounded-lg mb-3">
@@ -348,7 +355,7 @@ AOS.init()</script>
                     </template>
                </button>
                <div class="relative overflow-hidden transition-all h-0 duration-200" x-ref="container3" x-bind:style="selected == 3 ? 'height: ' + $refs.container3.scrollHeight + 'px' : ''">
-                    <div class="p-6"><p>Not yet, but we're working on a way to integrate primo with VSCode so you can do more high-level operations locally. </p></div>
+                    <div class="p-6"><p>You can use primo as a headless CMS since it, by default, publishes a static API. So you can consume your site both as a webpage or as a JSON object. The neat thing about using it just as a CMS is that you can use primo's IDE to build yourself a custom dashboard.</p></div>
                </div>
             </li>
             <li class="relative bg-gray-900 rounded-lg mb-3">
@@ -361,7 +368,7 @@ AOS.init()</script>
                     </template>
                </button>
                <div class="relative overflow-hidden transition-all h-0 duration-200" x-ref="container4" x-bind:style="selected == 4 ? 'height: ' + $refs.container4.scrollHeight + 'px' : ''">
-                    <div class="p-6"><p>Every time you build your site a snapshot of it gets saved alongside your site as a simple json file. So if you ever need to restore your site to a previous version or migrate to a different tool, you can.</p></div>
+                    <div class="p-6"><p>Since primo's git-backed, the only data you could actually lose is anything you haven't saved yet. But because it’s a web tool, there’s no sure guarantee that your unsaved work won't be lost (for example, if the app crashes and you're forced to refresh the page), especially at this stage of development. But every time you save your site a snapshot of it gets saved in your repo, so if you ever need to go back to an earlier version you can.</p></div>
                </div>
             </li>
             <li class="relative bg-gray-900 rounded-lg mb-3">
@@ -374,7 +381,7 @@ AOS.init()</script>
                     </template>
                </button>
                <div class="relative overflow-hidden transition-all h-0 duration-200" x-ref="container5" x-bind:style="selected == 5 ? 'height: ' + $refs.container5.scrollHeight + 'px' : ''">
-                    <div class="p-6"><p>Primo is being worked on full-time by a small bootstrapped team. We've been working on it for close to two years and have enough runway to sustain ourselves until at least 2022.</p></div>
+                    <div class="p-6"><p>Primo is being worked on full-time by a small bootstrapped team. We've been working on it for a year and a half and have enough runway to sustain ourselves until at least 2022.</p></div>
                </div>
             </li>
     </ul>
@@ -393,8 +400,8 @@ AOS.init()</script>
     background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
     display: block;
     height: 0.25rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     margin-left: auto;
     margin-right: auto;
     width: 3rem;
