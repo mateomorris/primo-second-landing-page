@@ -1737,7 +1737,7 @@ video {
 }
 
 .primo-page {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .primo-copy {
