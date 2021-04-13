@@ -1764,12 +1764,12 @@ video {
     font-weight: 600;
     font-size: 2.25rem;
     line-height: 2.5rem;
-    margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+    margin-top: 1rem;
   }
 
 .primo-copy p + h2 {
-    margin-top: 3rem;
+    margin-top: 1.5rem;
   }
 
 .primo-copy h2 + h3 {
