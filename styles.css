@@ -686,6 +686,11 @@ video {
   background-color: rgba(248, 113, 113, var(--tw-bg-opacity));
 }
 
+.hover\:bg-red-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(220, 38, 38, var(--tw-bg-opacity));
+}
+
 .bg-bottom {
   background-position: bottom;
 }
@@ -716,6 +721,11 @@ video {
 .border-gray-900 {
   --tw-border-opacity: 1;
   border-color: rgba(17, 24, 39, var(--tw-border-opacity));
+}
+
+.border-primored {
+  --tw-border-opacity: 1;
+  border-color: rgba(248, 68, 73, var(--tw-border-opacity));
 }
 
 .hover\:border-primored:hover {
@@ -1051,6 +1061,10 @@ video {
 
 .max-w-3xl {
   max-width: 48rem;
+}
+
+.max-w-6xl {
+  max-width: 72rem;
 }
 
 .max-w-7xl {
