@@ -647,9 +647,14 @@ video {
   background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
 }
 
-.bg-gray-800 {
+.bg-gray-300 {
   --tw-bg-opacity: 1;
-  background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
+  background-color: rgba(209, 213, 219, var(--tw-bg-opacity));
+}
+
+.bg-gray-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(107, 114, 128, var(--tw-bg-opacity));
 }
 
 .bg-gray-900 {
@@ -1454,11 +1459,6 @@ video {
   color: rgba(107, 114, 128, var(--tw-text-opacity));
 }
 
-.text-gray-600 {
-  --tw-text-opacity: 1;
-  color: rgba(75, 85, 99, var(--tw-text-opacity));
-}
-
 .text-gray-700 {
   --tw-text-opacity: 1;
   color: rgba(55, 65, 81, var(--tw-text-opacity));
@@ -1482,11 +1482,6 @@ video {
 .text-red-700 {
   --tw-text-opacity: 1;
   color: rgba(185, 28, 28, var(--tw-text-opacity));
-}
-
-.text-green-500 {
-  --tw-text-opacity: 1;
-  color: rgba(16, 185, 129, var(--tw-text-opacity));
 }
 
 .text-indigo-600 {
@@ -1894,7 +1889,7 @@ video {
 
 .primo-copy a {
     --tw-text-opacity: 1;
-    color: rgba(37, 99, 235, var(--tw-text-opacity));
+    color: rgba(248, 68, 73, var(--tw-text-opacity));
     text-decoration: underline;
   }
 
