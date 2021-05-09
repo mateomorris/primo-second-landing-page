@@ -1563,6 +1563,10 @@ video {
   width: 8rem;
 }
 
+.w-64 {
+  width: 16rem;
+}
+
 .w-1\/2 {
   width: 50%;
 }
