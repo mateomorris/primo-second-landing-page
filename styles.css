@@ -877,6 +877,10 @@ video {
   font-weight: 800;
 }
 
+.font-black {
+  font-weight: 900;
+}
+
 .h-0 {
   height: 0px;
 }
@@ -1577,8 +1581,8 @@ video {
   width: 8rem;
 }
 
-.w-64 {
-  width: 16rem;
+.w-48 {
+  width: 12rem;
 }
 
 .w-1\/2 {
