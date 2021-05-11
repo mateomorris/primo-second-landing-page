@@ -1767,7 +1767,7 @@ video {
 .button {
   padding: 0.75em 1.25em;
   padding: var(--space-3) var(--space-5);
-  border-radius: 1rem;
+  border-radius: 0.25rem;
   color: white;
   color: var(--white);
   background-color: rgb(248,68,73);
